@@ -18,6 +18,11 @@
             background-color: #fef08a;
             background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23bfad2e' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+
+        #ntm {
+            background-color: #fee2e2;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23e2a0a0' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
     </style>
 </head>
 
@@ -62,10 +67,11 @@
                 class="left-0 z-10 items-center justify-center w-full text-sm font-thin uppercase select-none md:flex lg:absolute hidden">
                 <div
                     class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
-                    <a href="#_" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Au menu</a>
-                    <a href="#_" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">L'établissement</a>
-                    <a href="#_" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Réalisations</a>
-                    <a href="#_" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Avis clients</a>
+                    <a href="#seemenu" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Au menu</a>
+                    <a href="#etablissement" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">L'établissement</a>
+                    <a href="#lastcocktails" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Réalisations</a>
+                    <a href="#ntm" class="py-3 text-gray-300 hover:text-gray-100 hover:underline">Avis clients</a>
+
                 </div>
             </div>
 
@@ -80,7 +86,7 @@
         </nav>
 
 
-        <div
+        <div id="etablissement"
             class="relative z-30 flex flex-col px-10 pt-20 pb-32 mx-auto md:flex-row sm:pt-24 sm:pb-32 md:pt-32 md:pb-40 max-w-7xl">
             <div class="flex flex-col items-start justify-center w-full space-y-8 md:w-1/2 sm:pr-8 xl:pr-20"
                 spellcheck="false" style="word-break: break-word; position: relative; z-index: 0;"
@@ -94,7 +100,7 @@
                     Les meilleurs cocktails numériques pour votre entreprise&nbsp;! Bienvenue à mon comptoir et
                     découvrons ensemble les solutions que je peux vous proposer dans la transition numérique de votre
                     entreprise.</p>
-                <a href="#_"
+                <a href="#seemenu"
                     class="flex italic items-center w-full px-5 py-3 mb-3 mr-1 text-base font-semibold  text-yellow-200 no-underline align-middle bg-transparent border-2 border-yellow-300 border-solid rounded-full cursor-pointer select-none sm:mb-0 sm:w-auto rotate-30 hover:bg-rose-300 hover:border-rose-300 hover:text-black focus-within:bg-blue-700 focus-within:border-blue-700"
                     data-rounded="rounded-md" data-primary="blue-600" spellcheck="false" data-mci-spellchecked="true"
                     style="word-break: break-word; position: relative; z-index: 0;">
@@ -114,7 +120,7 @@
                     <mci-extension data-role="overlay" id="overlay-root"></mci-extension>
             </div>
             <div class="relative flex items-center justify-center w-full mt-10 md:mt-0 md:w-1/2">
-                <img src="assets/homePhoto.png" class="rounded-lg w-100">
+                <img src="/assets/homePhoto.png" class="rounded-lg w-100">
             </div>
             <mci-extension data-role="overlay" id="overlay-root"></mci-extension>
             <mci-extension data-role="overlay" id="overlay-root"></mci-extension>
@@ -127,7 +133,7 @@
 
 
     <!-- SERVICES PROPOSES -->
-    <section
+    <section id="seemenu"
         class="relative w-full py-12 overflow-hidden md:py-20 xl:pt-20 xl:pb-40 tails-selected-element menu-pattern"
         contenteditable="true" spellcheck="false" data-mci-spellchecked="true"
         style="word-break: break-word; position: relative; z-index: 0;">
@@ -150,10 +156,12 @@
                                 <div class="relative h-full p-5 bg-white border-2 border-black"
                                     data-primary="indigo-500" data-rounded="rounded-lg" data-rounded-max="rounded-full">
                                     <div class="flex items-center -mt-1">
-                                        <svg class="w-8 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                                          </svg>
-                                          
+                                        <svg class="w-8 h-8 text-black" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                                        </svg>
+
                                         <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Développement web</h3>
                                     </div>
                                     <p class="mb-2 text-gray-600">You can get a quick snapshot of all your analytics on
@@ -168,10 +176,12 @@
                                 <div class="relative h-full p-5 bg-white border-2 border-black"
                                     data-primary="indigo-500" data-rounded="rounded-lg" data-rounded-max="rounded-full">
                                     <div class="flex items-center -mt-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-black" ">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                                          </svg>
-                                          
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-black" ">
+                                            <path stroke-linecap=" round" stroke-linejoin="round"
+                                            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                        </svg>
+
                                         <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Optimisation SEO On-site /
                                             Off-site</h3>
                                     </div>
@@ -190,9 +200,11 @@
                                 <div class="relative h-full p-5 bg-white border-2 border-black"
                                     data-primary="indigo-500" data-rounded="rounded-lg" data-rounded-max="rounded-full">
                                     <div class="flex items-center -mt-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                          </svg>                                          
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                        </svg>
                                         <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Community management</h3>
                                     </div>
                                     <p class="mb-2 text-gray-600">You can get a quick snapshot of all your analytics on
@@ -207,10 +219,12 @@
                                 <div class="relative h-full p-5 bg-white border-2 border-black"
                                     data-primary="indigo-500" data-rounded="rounded-lg" data-rounded-max="rounded-full">
                                     <div class="flex items-center -mt-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
-                                          </svg>
-                                          
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
+                                        </svg>
+
                                         <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Elaboration de stratégie
                                             marketing digital</h3>
                                     </div>
@@ -226,13 +240,15 @@
         </div>
     </section>
 
-    <section class="mt-20 rounded-lg shadow-2xl shadow-blue-500  relative w-2/5 mb-20 mx-auto overflow-hidden bg-rose-200 tails-selected-element"
-        contenteditable="true">
+    <section
+        class="mt-20 rounded-lg shadow-2xl shadow-blue-500  relative w-3/5 mb-20 mx-auto overflow-hidden bg-rose-200 tails-selected-element"
+       >
         <div
             class="relative z-20 flex items-center justify-center max-w-5xl px-8 py-24 mx-auto md:justify-start md:py-32">
             <div class="relative z-20 flex flex-col items-start max-w-md space-y-8">
                 <p class="font-bold tracking-wider uppercase">qui va vous servir ?</p>
-                <h1 class="text-2xl"><span class="font-extrabold">Un barman du webmarketing ?</span> <span class="italic"> WTF ?</span></h1>
+                <h1 class="text-2xl"><span class="font-extrabold">Un barman du webmarketing ?</span> <span
+                        class="italic"> WTF ?</span></h1>
                 <p class="font-medium">Pourtant c'est bien comme cela que j'aime me définir. Mais
                     derrière ce surnom, sobriquet, image (rayez la mention inutile)
                     assez original c'est avant tout les lignes rédigée par une personne passionné du marketing digital
@@ -244,8 +260,8 @@
 
                 <p class="font-medium">Vu qu'une image vaut 1000 mots, n'hésitez pas à jeter un œil sur les
                     projets que j'ai eu la chance de réaliser</p>
-                <a href="#_"
-                    class="inline-block w-full px-5 py-4 font-bold text-center text-white bg-black md:w-auto">Découvrir
+                <a href="#lastcocktails"
+                    class="inline-block w-full px-5 py-4 font-bold text-center z-40 text-white bg-black md:w-auto hover:cursor-pointer hover:bg-white hover:text-black scroll-smooth">Découvrir
                     mes cocktails en images</a>
             </div>
         </div>
@@ -255,44 +271,108 @@
     </section>
 
     <!-- REALISATIONS SECTION -->
-    <section class="py-16 bg-gray-50 xl:px-8 px-8 tails-selected-element" contenteditable="true">
-        <div class="w-3/4  mx-auto">
-            <h2  class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-slate-900 sm:text-center text-left">Les projets que j'ai pu réalisé</h2>
-            <p class="w-full text-left sm:text-center mb-8 md:text-lg text-slate-500">Merci à la confiance de ces entreprises et pourquoi pas bientôt la vôtre ?</p>
+    <section class="py-16 bg-gray-50 xl:px-8 px-8 tails-selected-element" contenteditable="true" id="lastcocktails">
+        <div class="w-3/4  mx-auto mb-20">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-slate-900 sm:text-center text-left">Les derniers cocktails en vedette</h2>
+            <p class="w-full text-left sm:text-center mb-8 md:text-lg text-slate-500">Merci à la confiance de ces
+                entreprises et pourquoi pas bientôt la vôtre ?</p>
 
             <!-- GRID -->
             <div class="flex space-x-8 mt-20">
                 <div class="w-full relative md:pr-48">
                     <img class="aspect-video object-cover" src="assets/realisation.png" alt="adventure destination">
-                    <div class="md:absolute relative lg:w-96 w-full md:max-w-md right-0 top-0 md:py-8 lg:py-12 h-full">
+                    <div class="md:absolute relative lg:w-96 w-full md:max-w-md right-0 top-0 md:py-8 lg:py-12 h-2xl">
                         <div class="w-full h-full flex flex-col items-start justify-between p-8 bg-white shadow-xl">
-                            <div class="bg-gray-50 lg:flex flex md:hidden border border-gray-100 text-cyan-500 px-3.5 space-x-1 items-center py-1.5 text-xs rounded-full inline-block font-bold">
+                            <div
+                                class="bg-gray-50 lg:flex flex md:hidden border border-gray-100 text-cyan-500 px-3.5 space-x-1 items-center py-1.5 text-xs rounded-full inline-block font-bold">
                                 <span class="uppercase">UI / UX</span>
                             </div>
                             <div class="relative">
                                 <img src="assets/amx.jpg" class="w-1/2 mx-auto mb-3" alt="">
-                                <p class="text-gray-500 text-sm py-5 lg:py-3 lg:text-base">Restructuration de la navigation et de l'user experience client au sein de cet outil de gestion.</p>
+                                <p class="text-gray-500 text-sm py-5 lg:py-3 lg:text-base h-2xl">Restructuration de la
+                                    navigation et de l'user experience client au sein de cet outil de gestion.</p>
                             </div>
-                            <a href="#_" class="bg-black px-6 py-3 text-sm font-semibold  text-white">Détails du projet</a>
+                            <a href="#_" class="bg-black px-6 py-3 text-sm font-semibold  text-white">Détails du
+                                projet</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-full relative md:pr-48">
-                    <img class="aspect-video object-cover brightness-50" src="assets/realisation2.png" alt="adventure destination">
-                    <div class="md:absolute relative lg:w-96 w-full md:max-w-md right-0 top-0 md:py-8 lg:py-12 h-full">
+                    <img class="aspect-video object-cover brightness-50" src="assets/realisation2.png"
+                        alt="adventure destination">
+                    <div class="md:absolute relative lg:w-96 w-full md:max-w-md right-0 top-0 md:py-8 lg:py-12 h-2xl">
                         <div class="w-full h-full flex flex-col items-start justify-between p-8 bg-white shadow-xl">
-                            <div class="bg-gray-50 lg:flex flex md:hidden border border-gray-100 text-rose-500 px-3.5 space-x-1 items-center py-1.5 text-xs rounded-full inline-block font-bold">
+                            <div
+                                class="bg-gray-50 lg:flex flex md:hidden border border-gray-100 text-rose-500 px-3.5 space-x-1 items-center py-1.5 text-xs rounded-full inline-block font-bold">
                                 <span class="uppercase">DATA SCRAPPING</span>
                             </div>
                             <div class="relative">
                                 <img src="assets/jmr.png" class="w-1/2 mx-auto mb-3" alt="">
-                                <p class="text-gray-500 text-sm py-5 lg:py-3 lg:text-base">Restructuration de la navigation et de l'user experience client au sein de cet outil de gestion.</p>
+                                <p class="text-gray-500 text-sm py-5 lg:py-3 lg:text-base">Restructuration de la
+                                    navigation et de l'user experience client au sein de cet outil de gestion.</p>
                             </div>
-                            <a href="#_" class="bg-black px-6 py-3 text-sm font-semibold  text-white">Détails du projet</a>
+                            <a href="#_" class="bg-black px-6 py-3 text-sm font-semibold  text-white">Détails du
+                                projet</a>
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="ntm" class="flex items-center justify-center py-20 bg-red-100 min-w-screen tails-selected-element border-t- border-black"
+        contenteditable="true">
+        <div class="px-16 bg-transparent">
+            <div class="container flex flex-col items-start mx-auto lg:items-center">
+                <p class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-black-500 uppercase lg:justify-center lg:items-center"
+                    data-primary="black-500">
+                    Livre d'or</p>
+
+                <h2
+                    class="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-black lg:inline-block"
+                        viewBox="0 0 975.036 975.036">
+                        <path
+                            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                        </path>
+                    </svg>
+                </h2>
+                <div class="block w-full h-0.5 max-w-lg mt-6 bg-black rounded-full"></div>
+
+                <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div class="w-20 h-20 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGHm2-KE1u19g/profile-displayphoto-shrink_200_200/0/1651609329483?e=1673481600&v=beta&t=EewmTl7XOe2G0FNwi6oGDGVIFo4MLRhQP9OF9K20I0c"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col items-start justify-center">
+                                <h4 class="font-bold text-gray-800">Michael ZANI</h4>
+                                <p class="text-gray-600">CEO & Co-fondateur @AMX1</p>
+                            </div>
+                        </div>
+                        <blockquote class="mt-8 text-lg text-black-500">"Quentin a su comprendre rapidement nos besoins
+                            métiers dans le but de nous offrir une stratégie complète et performante"</blockquote>
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+                        <div class="flex items-center justify-center">
+                            <div class="w-20 h-20 mr-4 overflow-hidden bg-gray-200s rounded-full">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFaCYSVtbCbtA/profile-displayphoto-shrink_100_100/0/1615286267630?e=1673481600&v=beta&t=r1dABCbOeAXNrs-RvrXPiZC6iRRHTsN7fV3FgVKmiYY"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col items-start justify-center">
+                                <h4 class="font-bold text-gray-800">Karim BEN AMAR</h4>
+                                <p class="text-gray-600">CEO @JaimeMonResto</p>
+                            </div>
+                        </div>
+                        <blockquote class="mt-8 text-lg text-black-500">"Curieux et flexible, Quentin a su trouver des
+                            solutions techniques efficientes à des problématiques complexes"</blockquote>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
